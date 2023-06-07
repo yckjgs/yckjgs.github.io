@@ -151,3 +151,9 @@ window.addEventListener('load', function () {
     }
     window.requestAnimationFrame(type);
 });
+
+//跳转到指定位置
+function goTo(anchorId) {
+	document.querySelector('header').classList.toggle('open');//关闭菜单栏
+    document.querySelector(anchorId).scrollIntoView();//跳转到指定位置
+}
