@@ -154,6 +154,10 @@ window.addEventListener('load', function () {
 
 //跳转到指定位置
 function goTo(anchorId) {
-	document.querySelector('header').classList.toggle('open');//关闭菜单栏
-    document.querySelector(anchorId).scrollIntoView();//跳转到指定位置
+	let header = document.querySelector('header');
+	header.classList.toggle('open');//关闭菜单栏
+	//解决头部固定滚动
+	document.querySelector(anchorId).scrollIntoView();
+    let headerHeight = document.querySelector('nav').offsetHeight;
+    window.scrollBy(0, -headerHeight);
 }

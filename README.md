@@ -1,5 +1,17 @@
 # **云创科技工作室官网**
 
+
+###2023.06.08
+- 解决头部固定导致滚动条丢失精度问题
+https://www.5axxw.com/questions/simple/rwrcxy
+- 使用glup进行H5页面打包
+https://www.yuucn.com/a/130091.html
+
+初学gulp遇到gulp-imagemin版本问题
+https://blog.csdn.net/qq_25972233/article/details/123045152
+cnpm i gulp-imagemin@7.1.0 -D
+
+
 ### 2023.06.07
 - 导航锚点跳转
 - 页面排版优化

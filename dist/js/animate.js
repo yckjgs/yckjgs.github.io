@@ -1,0 +1,1 @@
+function animate(e,f,a){clearInterval(e.times),e.times=setInterval(function(){var t=0<(t=(f-e.offsetLeft)/10)?Math.ceil(t):Math.floor(t);e.offsetLeft==f?(clearInterval(e.times),a&&a()):e.style.left=e.offsetLeft+t+"px"},15)}

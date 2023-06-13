@@ -1,0 +1,25 @@
+{
+  "name": "yckjgs.github.io",
+  "version": "1.0.0",
+  "description": "云创科技工作室官网",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yckjgs/yckjgs.github.io.git"
+  },
+  "author": "yangtao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yckjgs/yckjgs.github.io/issues"
+  },
+  "homepage": "https://github.com/yckjgs/yckjgs.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^3.0.2"
+  }
+}
