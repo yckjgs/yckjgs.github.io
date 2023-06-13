@@ -16,10 +16,11 @@
     "url": "https://github.com/yckjgs/yckjgs.github.io/issues"
   },
   "homepage": "https://github.com/yckjgs/yckjgs.github.io#readme",
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
     "gulp-uglify": "^3.0.2"
   }
 }

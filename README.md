@@ -6,10 +6,12 @@
 https://www.5axxw.com/questions/simple/rwrcxy
 - 使用glup进行H5页面打包
 https://www.yuucn.com/a/130091.html
-
-初学gulp遇到gulp-imagemin版本问题
+-初学gulp遇到gulp-imagemin版本问题
 https://blog.csdn.net/qq_25972233/article/details/123045152
-cnpm i gulp-imagemin@7.1.0 -D
+
+cnpm i gulp gulp-uglify gulp-minify-css gulp-imagemin gulp-minify-html
+cnpm i gulp-imagemin@7.1.0
+gulp autoScript
 
 
 ### 2023.06.07

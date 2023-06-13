@@ -34,9 +34,6 @@ function script(){
         collapseWhitespace: true,
         collapseBooleanAttributes: true,
         removeComments: true,
-        removeEmptyAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
         minifyJS: true,//压缩js
         minifyCSS: true//压缩css
     };
