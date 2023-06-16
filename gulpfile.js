@@ -14,17 +14,7 @@ function script(){
 	gulp.src('yckjgs/css/*.css').pipe(minifyCss()).pipe(gulp.dest('dist/css'))
 	
 	//压缩图片文件
-	gulp.src('yckjgs/images/*.*').pipe(imagemin([
-				imagemin.gifsicle({interlaced: true}),
-				imagemin.mozjpeg({quality: 75, progressive: true}),
-				imagemin.optipng({optimizationLevel: 5}),
-				imagemin.svgo({
-					plugins: [
-						{removeViewBox: true},
-						{cleanupIDs: false}
-					]
-				})
-			])).pipe(gulp.dest('dist/images'))
+	gulp.src('yckjgs/images/*.*').pipe(gulp.dest('dist/images'))
 	
 	//移动font文件
 	gulp.src(['yckjgs/font/*'],{allowEmpty: true}).pipe(gulp.dest('dist/font'));

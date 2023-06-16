@@ -8,9 +8,9 @@ https://www.5axxw.com/questions/simple/rwrcxy
 https://www.yuucn.com/a/130091.html
 -初学gulp遇到gulp-imagemin版本问题
 https://blog.csdn.net/qq_25972233/article/details/123045152
-
-cnpm i gulp gulp-uglify gulp-minify-css gulp-imagemin gulp-minify-html
-cnpm i gulp-imagemin@7.1.0
+先移除package.json中依赖再执行如下命令:
+npm i gulp gulp-uglify gulp-minify-css gulp-imagemin gulp-minify-html
+#npm i gulp-imagemin@7.1.0
 gulp autoScript
 
 
@@ -33,3 +33,5 @@ git push origin pro #推送代码到远程仓库
 
 [参考项目](https://gitee.com/ke1001/website)
 [http://www.hcvps.cn/](http://www.hcvps.cn/)
+
+
