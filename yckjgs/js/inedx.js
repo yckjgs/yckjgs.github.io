@@ -163,15 +163,12 @@ function goTo(anchorId) {
 }
 
 //用原生JS实现网页调用系统自带的分享功能
-if (!navigator.share) {
-	alert("暂不支持分享功能！");
-} else {
-	navigator.share({
-	  //要共享的标题
-	  title: window.location.title,
-	  //要共享的 URL
-	  url: window.location.href,
-	  //要共享的文本
-	  text: '南都云创科技工作室是一家提供网站建设、小程序开发及企业管理软件解决方案的技术服务商。'
-	});
+if (navigator.share) {
+    navigator.share({
+        title: window.location.title+'<img src="https://yckjgs.github.io/images/kgy.ico"></img>',
+		url: window.location.href,
+        text: '南都云创科技工作室<img src="https://yckjgs.github.io/images/kgy.ico"></img>',
+		files: 'https://yckjgs.github.io/images/kgy.ico'
+    }).then(() => console.log('分享成功！'))
+        .catch((error) => console.log('分享时遇到了错误……', error));
 }
