@@ -161,3 +161,17 @@ function goTo(anchorId) {
     let headerHeight = document.querySelector('nav').offsetHeight;
     window.scrollBy(0, -headerHeight);
 }
+
+//用原生JS实现网页调用系统自带的分享功能
+if (!navigator.share) {
+	alert("暂不支持分享功能！");
+} else {
+	navigator.share({
+	  //要共享的标题
+	  title: window.location.title,
+	  //要共享的 URL
+	  url: window.location.href,
+	  //要共享的文本
+	  text: '南都云创科技工作室是一家提供网站建设、小程序开发及企业管理软件解决方案的技术服务商。'
+	});
+}
