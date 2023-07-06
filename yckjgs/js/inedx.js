@@ -153,9 +153,11 @@ window.addEventListener('load', function () {
 });
 
 //跳转到指定位置
-function goTo(anchorId) {
-	let header = document.querySelector('header');
-	header.classList.toggle('open');//关闭菜单栏
+function goTo(anchorId,isopen) {
+	if(isopen){
+	   let header = document.querySelector('header');
+	   header.classList.toggle('open');//关闭菜单栏
+	}
 	//解决头部固定滚动
 	document.querySelector(anchorId).scrollIntoView();
     let headerHeight = document.querySelector('nav').offsetHeight;
@@ -163,12 +165,11 @@ function goTo(anchorId) {
 }
 
 //用原生JS实现网页调用系统自带的分享功能
-if (navigator.share) {
-    navigator.share({
-        title: window.location.title+'<img src="https://yckjgs.github.io/images/kgy.ico"></img>',
+if (window.navigator.share) {
+    window.navigator.share({
+        title: '南都云创科技工作室',
 		url: window.location.href,
-        text: '南都云创科技工作室<img src="https://yckjgs.github.io/images/kgy.ico"></img>',
-		files: 'https://yckjgs.github.io/images/kgy.ico'
-    }).then(() => console.log('分享成功！'))
-        .catch((error) => console.log('分享时遇到了错误……', error));
+		icon: 'https://yckjgs.github.io/images/kgy.ico',
+		text: '网站建设、小程序开发及企业管理软件技术开发服务商'
+    }).then(() => console.log('分享成功！'));
 }
